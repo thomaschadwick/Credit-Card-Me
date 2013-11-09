@@ -5,44 +5,27 @@
                 <section class="ccme-container">
                     <div class="ccme-container-number">
                         <label for="card-number" class="ccme-label-card-number">Card Number</label>
-                        <input type="text" name="card-number" id="card-number" class="ccme-number" placeholder="1234 1234 1234 1234">
-                    </div>
-                    <div class="ccme-container-code">
-                        <label for="card-code">Security Code</label>
-                        <input type="text" name="card-code" id="card-code" class="ccme-code" placeholder="123">
-                        <button type="button" class="ccme-btn">?</button>
+                        <input type="tel" name="card-number" id="card-number" class="ccme-number" placeholder="1234 1234 1234 1234">
                     </div>
                 </section>
                 <section class="ccme-container">
                     <div class="ccme-container-name">
                         <label for="card-name">Name on Card</label>
-                        <input type="text" name="card-name" id="card-name" class="ccme-name">
+                        <input type="text" name="card-name" id="card-name" class="ccme-name" placeholder="John Doe">
                     </div>
-                    <fieldset class="ccme-container-expiration">
-                        <legend>Expiration</legend>
-                        <select name="card-expmonth" title="Credit Card Expiration Month" id="card-expmonth" class="ccme-month">
-                            <option>01</option>
-                            <option>02</option>
-                            <option>03</option>
-                            <option>04</option>
-                            <option>05</option>
-                            <option>06</option>
-                            <option>07</option>
-                            <option>08</option>
-                            <option>09</option>
-                            <option>10</option>
-                            <option>11</option>
-                            <option>12</option>
-                        </select> <span class="ccmd-slash">/</span>
+                </section>
+                <section class="ccme-container">
+                    <label for="card-expmonth">Expiration</label>
+                    <input type="tel" name="card-expmonth" id="card-expmonth" class="ccme-expiration" placeholder="05"> <span class="ccmd-slash">/</span>
 
-                        <select name="card-expyear" title="Credit Card Expiration Year" id="card-expyear" class="ccme-year">
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                        </select>
-                    </fieldset>
+                    <input type="tel" name="card-expyear" id="card-expyear" class="ccme-expiration" placeholder="15">
+                </section>
+                <section>
+                    <div class="ccme-container-code">
+                        <label for="card-code">Security Code</label>
+                        <input type="tel" name="card-code" id="card-code" class="ccme-code" placeholder="1234">
+                        <button type="button" class="ccme-btn">?</button>
+                    </div>
                 </section>
             </div>
         </section>

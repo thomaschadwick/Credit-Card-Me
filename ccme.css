@@ -1,4 +1,4 @@
-.ccme input, .ccme select, .ccme label, .ccme fieldset, .ccme legend, .ccme button {
+.ccme input, .ccme label, .ccme button {
     position: relative;
     padding: 0;
     margin: 0;
@@ -12,95 +12,91 @@
     -moz-border-radius: 0;
     border-radius: 0;
 }
-.ccme label, .ccme legend, .ccme fieldset {
+.ccme label {
     line-height: 1.5em;
     height: 1.5em;
     color: #5e656b;
+    display: block;
+}
+.ccme input {
+    display: inline-block;
+}
+.ccme .ccme-container {
+    display: inline-block;
+    margin-bottom: 0.4em;
 }
 .ccme {
     position: relative;
     display: block;
     font-size: 16px;
-    font-family:'Source Sans Pro', 'Helvtica', 'Arial', san-serif;
+    font-family:'Helvetica', 'Arial', san-serif;
     text-align: left;
 }
 .ccme .ccme-well {
-    border: 1px solid rgba(220, 220, 220, 1);
+    width: 20.7em;
+    position: relative;
+    background-color: rgba(240, 240, 240, 1);
+    border: 1px solid rgba(200, 200, 200, 1);
     padding: 1em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    width: 30em;
-    background-color: rgba(238, 238, 238, 1);
-    position: relative;
-}
-.ccme label {
-    display: block;
-    border: 0px solid pink;
-}
-.ccme select {
-    display: inline-block;
-}
-.ccme .ccme-container-expiration, .ccme .ccme-container-code, .ccme .ccme-container-name, .ccme .ccme-container-number {
-    display: inline-block;
-    border: 1px solid pink;
-}
-.ccme .ccme-container-name, .ccme .ccme-container-expiration {
-    margin: 0;
-    padding: 0;
-    height: 6em;
-}
-.ccme label {
-    font-size: 1.4em;
-}
-.ccme .ccme-btn {
-    font-size: 1.7em;
-    padding: 0.3em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    display: inline-block;
-    position: relative;
 }
 .ccme .ccme-number {
-    width: 11.9em;
-    height: 2em;
-    padding: 0.2em;
-    padding-right: 0.1em;
-    padding-left: 0.4em;
-    font-size: 1.6em;
-    margin-top: 0.2em;
-    margin-bottom: 1em;
-}
-.ccme .ccme-code {
-    width: 2.3em;
-    height: 2em;
-    padding: 0.2em;
-    padding-right: 0.1em;
-    padding-left: 0.4em;
-    font-size: 1.6em;
-    margin-top: 0.2em;
-    margin-bottom: 1em;
+    padding: 0.4em;
+    font-size: 1.7em;
+    width: 11.2em;
 }
 .ccme .ccme-name {
-    width: 10em;
+    padding: 0.4em;
     font-size: 1.2em;
-    padding: 0.5em;
 }
-/*.ccme .ccme-month {
+.ccme .ccme-expiration {
+    padding: 0.4em;
     font-size: 1.2em;
-    height: 2.3em;
-    border: 1px solid rgba(130, 130, 130, 1);
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(100, 100, 100, 1);
-    margin-bottom: 5px;
-}*/
-select {
-    width: 3.5em;
-    font-size: 1em;
-    line-height: 1em;
-    height: 2em;
-    border: 1px solid #c7cbce;
+    width: 1.2em;
 }
-
-fieldset {
-    display: none;
+.ccme .ccme-code {
+    padding: 0.4em;
+    font-size: 1.2em;
+    width: 2.3em;
+    /*or 2em for 3 character code */
+}
+.ccme .ccme-btn {
+    border: 1px solid #d9d9d9;
+    padding: 0.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.1em;
+    background: #f5f5f5;
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+    background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+    font-family: Georgia;
+    color: #000000;
+    text-decoration: none;
+}
+.ccme .ccme-btn:hover {
+    border: 1px solid #c0c0c0;
+    -webkit-box-shadow: 0px 0px 1px 0px #bbb;
+    box-shadow: 0px 0px 1px 0px #bbb;
+    cursor: pointer;
+    background: #f9f9f9;
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #fbfbfb);
+    background-image: -moz-linear-gradient(top, #f9f9f9, #fbfbfb);
+    background-image: -ms-linear-gradient(top, #f9f9f9, #fbfbfb);
+    background-image: -o-linear-gradient(top, #f9f9f9, #fbfbfb);
+    background-image: linear-gradient(to bottom, #f9f9f9, #fbfbfb);
+    text-decoration: none;
+}
+.ccme .ccme-btn:active {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 0px 1px 1px #d0d0d0;
+    box-shadow: inset 0px 0px 1px 1px #d0d0d0;
+    background: #e0e0e0;
+    background-image: -webkit-linear-gradient(top, #e0e0e0, #e5e5e5);
+    background-image: -moz-linear-gradient(top, #e0e0e0, #e5e5e5);
+    background-image: -ms-linear-gradient(top, #e0e0e0, #e5e5e5);
+    background-image: -o-linear-gradient(top, #e0e0e0, #e5e5e5);
+    background-image: linear-gradient(to bottom, #e0e0e0, #e5e5e5);
+    text-decoration: none;
 }
