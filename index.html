@@ -5,25 +5,25 @@
                 <section class="ccme-container">
                     <div class="ccme-container-number">
                         <label for="card-number" class="ccme-label-card-number">Card Number</label>
-                        <input type="tel" name="card-number" id="card-number" class="ccme-number" placeholder="1234 1234 1234 1234">
+                        <input type="tel" name="card-number" id="card-number" class="ccme-number" placeholder="1234 1234 1234 1234" required>
                     </div>
                 </section>
                 <section class="ccme-container">
                     <div class="ccme-container-name">
                         <label for="card-name">Name on Card</label>
-                        <input type="text" name="card-name" id="card-name" class="ccme-name" placeholder="John Doe">
+                        <input type="text" name="card-name" id="card-name" class="ccme-name" placeholder="John Doe" required>
                     </div>
                 </section>
                 <section class="ccme-container">
                     <label for="card-expmonth">Expiration</label>
-                    <input type="tel" name="card-expmonth" id="card-expmonth" class="ccme-expiration" placeholder="05"> <span class="ccmd-slash">/</span>
+                    <input type="tel" name="card-expmonth" id="card-expmonth" class="ccme-expiration" placeholder="05" required> <span class="ccmd-slash">/</span>
 
-                    <input type="tel" name="card-expyear" id="card-expyear" class="ccme-expiration" placeholder="15">
+                    <input type="tel" name="card-expyear" id="card-expyear" class="ccme-expiration" placeholder="15" required>
                 </section>
                 <section>
                     <div class="ccme-container-code">
-                        <label for="card-code">Security Code</label>
-                        <input type="tel" name="card-code" id="card-code" class="ccme-code" placeholder="1234">
+                        <label for="card-code" class="ccme-error">Security Code</label>
+                        <input type="tel" name="card-code" id="card-code" class="ccme-code ccme-error" placeholder="1234" required>
                         <button type="button" class="ccme-btn">?</button>
                     </div>
                 </section>

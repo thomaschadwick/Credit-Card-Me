@@ -100,3 +100,17 @@
     background-image: linear-gradient(to bottom, #e0e0e0, #e5e5e5);
     text-decoration: none;
 }
+.ccme label.ccme-error {
+    color: #f01d1d;
+}
+.ccme input.ccme-error {
+    border: 1px solid #f01d1d;
+    -webkit-box-shadow: inset 0px 0px 2px 0px #ff0000;
+    box-shadow: inset 0px 0px 2px 0px #ff0000;
+    outline: 0px solid #ff0000;
+}
+.ccme input.ccme-error:focus {
+    outline: 0px solid #ff0000;
+    -webkit-box-shadow: 0px 0px 2px 1px #ff0000;
+    box-shadow: 0px 0px 2px 1px #ff0000;
+}
