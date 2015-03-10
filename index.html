@@ -1,33 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="ccme.css" rel="stylesheet" />
+</head>
 <body>
-    <form action="/" autocomplete="on">
-        <section class="ccme">
-            <div class="ccme-well">
-                <section class="ccme-container">
-                    <div class="ccme-container-number">
-                        <label for="card-number" class="ccme-label-card-number">Card Number</label>
-                        <input type="tel" name="card-number" id="card-number" class="ccme-number" placeholder="1234 1234 1234 1234">
-                    </div>
-                </section>
-                <section class="ccme-container">
-                    <div class="ccme-container-name">
-                        <label for="card-name">Name on Card</label>
-                        <input type="text" name="card-name" id="card-name" class="ccme-name" placeholder="John Doe">
-                    </div>
-                </section>
-                <section class="ccme-container">
-                    <label for="card-expmonth">Expiration</label>
-                    <input type="tel" name="card-expmonth" id="card-expmonth" class="ccme-expiration" placeholder="05"> <span class="ccmd-slash">/</span>
+    <div id="container">
+      <form action="/" autocomplete="on">
+          <section class="ccme">
+              <div class="ccme-well">
+                  <section class="ccme-container">
+                      <div class="ccme-container-number">
+                          <label for="card-number" class="ccme-label-card-number">Card Number</label>
+                          <input type="tel" name="card-number" id="card-number" class="ccme-number" placeholder="1234 1234 1234 1234">
+                      </div>
+                  </section>
+                  <section class="ccme-container">
+                      <div class="ccme-container-name">
+                          <label for="card-name">Name on Card</label>
+                          <input type="text" name="card-name" id="card-name" class="ccme-name" placeholder="John Doe">
+                      </div>
+                  </section>
+                  <section class="ccme-container">
+                      <label for="card-expmonth">Expiration</label>
+                      <input type="tel" name="card-expmonth" id="card-expmonth" class="ccme-expiration" placeholder="05"> <span class="ccmd-slash">/</span>
 
-                    <input type="tel" name="card-expyear" id="card-expyear" class="ccme-expiration" placeholder="15">
-                </section>
-                <section>
-                    <div class="ccme-container-code">
-                        <label for="card-code">Security Code</label>
-                        <input type="tel" name="card-code" id="card-code" class="ccme-code" placeholder="1234">
-                        <button type="button" class="ccme-btn">?</button>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </form>
+                      <input type="tel" name="card-expyear" id="card-expyear" class="ccme-expiration" placeholder="15">
+                  </section>
+                  <section>
+                      <div class="ccme-container-code">
+                          <label for="card-code">Security Code</label>
+                          <input type="tel" name="card-code" id="card-code" class="ccme-code" placeholder="1234">
+                          <button type="button" class="ccme-btn">?</button>
+                      </div>
+                  </section>
+              </div>
+          </section>
+      </form>
+    </div>
 </body>
+</html>

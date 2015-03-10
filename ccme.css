@@ -1,3 +1,8 @@
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .ccme input, .ccme label, .ccme button {
     position: relative;
     padding: 0;
